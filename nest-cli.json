@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/main/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/main/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/main",
+  "defaultLibraryPrefix": "@/libs",
+  "projects": {
+    "configuration": {
+      "type": "library",
+      "root": "libs/configuration",
+      "entryFile": "index",
+      "sourceRoot": "libs/configuration/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/configuration/tsconfig.lib.json"
+      }
+    },
+    "jwt": {
+      "type": "library",
+      "root": "libs/jwt",
+      "entryFile": "index",
+      "sourceRoot": "libs/jwt/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/jwt/tsconfig.lib.json"
+      }
+    },
+    "main": {
+      "type": "application",
+      "root": "apps/main",
+      "entryFile": "main",
+      "sourceRoot": "apps/main/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/main/tsconfig.app.json"
+      }
+    },
+    "onboarding": {
+      "type": "application",
+      "root": "apps/onboarding",
+      "entryFile": "main",
+      "sourceRoot": "apps/onboarding/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/onboarding/tsconfig.app.json"
+      }
+    },
+    "transactional": {
+      "type": "application",
+      "root": "apps/transactional",
+      "entryFile": "main",
+      "sourceRoot": "apps/transactional/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/transactional/tsconfig.app.json"
+      }
+    }
+  }
+}
