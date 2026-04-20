@@ -13,7 +13,6 @@
     "target": "ES2023",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
@@ -21,15 +20,17 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
+    "types": ["node", "jest"],
     "paths": {
+      "@/*": ["./*"],
       "@/libs/*": [
         "./libs/jwt/src/*"
       ],
       "@/libs/configuration": [
-        "libs/configuration/src"
+        "./libs/configuration/src"
       ],
       "@/libs/configuration/*": [
-        "libs/configuration/src/*"
+        "./libs/configuration/src/*"
       ],
       "@/modules/*": [
         "./apps/transactional/src/*",
