@@ -77,7 +77,8 @@
     ],
     "moduleNameMapper": {
       "^@/libs/configuration(|/.*)$": "<rootDir>/libs/configuration/src/$1",
-      "^@/libs/jwt(|/.*)$": "<rootDir>/libs/jwt/src/$1"
+      "^@/libs/jwt(|/.*)$": "<rootDir>/libs/jwt/src/$1",
+      "^@/libs/axios(|/.*)$": "<rootDir>/libs/axios/src/$1"
     }
   }
 }
