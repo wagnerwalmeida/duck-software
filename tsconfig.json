@@ -26,10 +26,10 @@
         "./libs/jwt/src/*"
       ],
       "@/libs/configuration": [
-        "./libs/configuration/src"
+        "libs/configuration/src"
       ],
       "@/libs/configuration/*": [
-        "./libs/configuration/src/*"
+        "libs/configuration/src/*"
       ],
       "@/modules/*": [
         "./apps/transactional/src/*",
