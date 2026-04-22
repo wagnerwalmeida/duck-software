@@ -13,9 +13,10 @@ import { GetJwtSecret } from './get-jwt-secret.service';
 		JwtService,
 		{
 			provide: GetJwtSecret,
-			useFactory: async (configurationService: ConfigurationService) => {
+			useFactory: (configurationService: ConfigurationService) => {
 				return {
-					execute: async () => await configurationService.get("JWT_SECRET"),
+					execute: async () =>
+						await configurationService.get('JWT_SECRET'),
 				};
 			},
 			inject: [ConfigurationService],

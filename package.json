@@ -26,6 +26,7 @@
     "@nestjs/jwt": "^11.0.2",
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/swagger": "^11.3.0",
+    "axios": "^1.15.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1"
   },
@@ -76,7 +77,8 @@
     ],
     "moduleNameMapper": {
       "^@/libs/configuration(|/.*)$": "<rootDir>/libs/configuration/src/$1",
-      "^@/libs/jwt(|/.*)$": "<rootDir>/libs/jwt/src/$1"
+      "^@/libs/jwt(|/.*)$": "<rootDir>/libs/jwt/src/$1",
+      "^@/libs/axios(|/.*)$": "<rootDir>/libs/axios/src/$1"
     }
   }
 }
